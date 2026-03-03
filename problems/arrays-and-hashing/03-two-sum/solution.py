@@ -1,3 +1,11 @@
+"""
+Problem: Two Sum
+Pattern: Arrays | Hash Map | Complement Lookup
+Difficulty: Easy
+Source: NeetCode
+"""
+
+
 def two_sum_naive(nums: list[int], target: int) -> list[int]:
     """
     Returns the indices of two elements in `nums` whose sum equals `target`.

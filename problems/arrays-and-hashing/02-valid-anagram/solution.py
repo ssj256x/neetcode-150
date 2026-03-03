@@ -1,3 +1,11 @@
+"""
+Problem: Valid Anagram
+Pattern: Arrays | Frequency Counting | Hashing
+Difficulty: Easy
+Source: NeetCode
+"""
+
+
 def is_anagram_1(s: str, t: str) -> bool:
     """
     Returns True if `s` and `t` are anagrams.

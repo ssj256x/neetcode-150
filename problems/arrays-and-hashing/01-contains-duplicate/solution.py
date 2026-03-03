@@ -1,3 +1,11 @@
+"""
+Problem: Contains Duplicate
+Pattern: Arrays | Hash Set | Membership Lookup
+Difficulty: Easy
+Source: NeetCode
+"""
+
+
 def has_duplicate(nums: list[int]) -> bool:
     """
     Returns True if any value appears more than once in `nums`.
