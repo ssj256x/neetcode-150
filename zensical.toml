@@ -1,0 +1,96 @@
+[project]
+site_name = "Neetcode 150"
+site_description = "Structured DSA solutions and explanations for Neetcode 150 problems"
+site_author = "Sanjeet Jagdev"
+
+# Source markdown directory
+docs_dir = "problems"
+
+# Generated static site output
+site_dir = "site"
+
+# Base URL when deployed (GitHub pages)
+site_url = "https://<your-username>.github.io/<repo-name>/"
+
+# Clean URLs (/page instead of /page.html)
+clean_urls = true
+
+# Enable search index
+build_search_index = true
+
+
+[project.navigation]
+# Automatically generate sidebar navigation
+auto = true
+
+# Use folder names as navigation groups
+group_by_directory = true
+
+# Strip numeric prefixes like "01-"
+strip_number_prefix = true
+
+
+[project.markdown]
+# Enable common markdown features
+tables = true
+footnotes = true
+task_lists = true
+strikethrough = true
+
+
+[project.code]
+# Syntax highlighting
+highlight = true
+
+# Default language for code blocks
+default_language = "python"
+
+# Show line numbers
+line_numbers = false
+
+
+[project.markdown_extensions.pymdownx.highlight]
+anchor_linenums = true
+line_spans = "__span"
+pygments_lang_class = true
+[project.markdown_extensions.pymdownx.inlinehilite]
+[project.markdown_extensions.pymdownx.snippets]
+[project.markdown_extensions.pymdownx.superfences]
+
+
+
+[project.theme]
+palette.scheme = "slate"
+palette.primary = "amber"
+palette.accent = "amber"
+font.code = "JetBrains Mono"
+icon.logo = "fontawesome/solid/laptop-code"
+features = [
+    "navigation.path"
+]
+
+
+# Optional theme options
+dark_mode = true
+show_sidebar = true
+show_toc = true
+
+default_mode = "auto"
+
+[project.assets]
+# Static assets directory (optional)
+assets_dir = "assets"
+
+
+[project.server]
+# Local dev server configuration
+host = "127.0.0.1"
+port = 8000
+live_reload = true
+#
+#[project.theme.colors]
+#primary = "#7c3aed"
+#secondary = "#22c55e"
+#background = "#0f172a"
+#surface = "#1e293b"
+#text = "#e2e8f0"

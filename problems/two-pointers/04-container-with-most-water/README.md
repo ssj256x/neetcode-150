@@ -115,7 +115,7 @@ Try every pair of lines:
 ```python
 for i in range(n):
     for j in range(i + 1, n):
-        # compute area
+# compute area
 ```
 
 Time complexity: `O(n²)`

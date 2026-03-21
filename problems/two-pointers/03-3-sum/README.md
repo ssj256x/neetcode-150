@@ -119,6 +119,10 @@ This means:
         - Move both pointers
         - Skip duplicate values.
 
+```python title="solution"
+--8<-- "problems/two-pointers/03-3-sum/solution.py"
+```
+
 ---
 
 ## 4. Complexity
