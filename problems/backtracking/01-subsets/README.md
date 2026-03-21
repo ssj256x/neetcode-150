@@ -76,18 +76,18 @@ Traverse the **decision tree** and collect all subsets during traversal.
 
 1. Start with an empty subset.
 2. At each recursion:
-   - Add current subset to result.
-   - Iterate through remaining elements.
-   - Include current element.
-   - Recurse.
-   - Backtrack (remove element).
+    - Add current subset to result.
+    - Iterate through remaining elements.
+    - Include current element.
+    - Recurse.
+    - Backtrack (remove element).
 
 ---
 
 ### Implementation
 
 ```python
---8<-- "problems/backtracking/01-subsets/solution.py:solution_backtracking"
+--8 < -- "problems/backtracking/01-subsets/solution.py:solution_backtracking"
 ```
 
 ---
@@ -104,9 +104,9 @@ Traverse the **decision tree** and collect all subsets during traversal.
 
 - Works for **all subset-type problems**
 - Easy to extend with:
-  - constraints
-  - pruning
-  - conditions
+    - constraints
+    - pruning
+    - conditions
 
 ---
 
@@ -142,8 +142,8 @@ mask    binary    subset
 
 1. Loop from `0 → 2^n - 1`
 2. For each number:
-   - Check each bit position
-   - If bit is set, include corresponding element
+    - Check each bit position
+    - If bit is set, include corresponding element
 
 ---
 
@@ -157,21 +157,22 @@ mask    binary    subset
 
 ### Complexity
 
-- **Time**: `O(n * 2^n)`
-- **Space**: `O(n * 2^n)`
+- **Time**: `O(n * 2^n)` where `n` comes from subset copy that can have max `n` items and `2^n` from all possible
+  choices of `include` or `exclude`
+- **Space**: `O(n * 2^n)` Since max recursion depth is `n` and number of subsets is `2^n`
 
 ---
 
 ## 5. Comparison of Approaches
 
-| Aspect | Backtracking | Bitmask |
-|------|-------------|--------|
-| Strategy | DFS decision tree | Binary representation |
-| Readability | High | Medium |
-| Flexibility | Very high | Low |
-| Extensibility | Easy | Hard |
-| Recursion | Yes | No |
-| Best use case | General problems | Simple subset generation |
+| Aspect        | Backtracking      | Bitmask                  |
+|---------------|-------------------|--------------------------|
+| Strategy      | DFS decision tree | Binary representation    |
+| Readability   | High              | Medium                   |
+| Flexibility   | Very high         | Low                      |
+| Extensibility | Easy              | Hard                     |
+| Recursion     | Yes               | No                       |
+| Best use case | General problems  | Simple subset generation |
 
 ---
 
