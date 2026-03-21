@@ -1,4 +1,4 @@
-# --8<-- start:combination_sum
+# --8<-- [start:combination_sum]
 def combination_sum(nums: list[int], target: int) -> list[list[int]]:
     def find(cur: int, remaining: int, subset: list[int]):
         if remaining == 0:
@@ -16,9 +16,9 @@ def combination_sum(nums: list[int], target: int) -> list[list[int]]:
     return ans
 
 
-# --8<-- end:combination_sum
+# --8<-- [end:combination_sum]
 
-# --8<-- start:combination_sum_with_sort
+# --8<-- [start:combination_sum_with_sort]
 def combination_sum_with_sort(nums: list[int], target: int) -> list[list[int]]:
     def find(cur: int, remaining: int, subset: list[int]):
         if remaining == 0:
@@ -38,7 +38,7 @@ def combination_sum_with_sort(nums: list[int], target: int) -> list[list[int]]:
     return ans
 
 
-# --8<-- end:combination_sum_with_sort
+# --8<-- [end:combination_sum_with_sort]
 
 n = [2, 5, 6, 9]
 t = 9

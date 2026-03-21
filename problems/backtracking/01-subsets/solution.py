@@ -16,8 +16,8 @@ def subsets_approach_1_backtracking(nums: list[int]) -> list[list[int]]:
     return ans
 
 
-# --8<-- start:solution_backtracking
-def subsets_approach_2_backtracking(nums: list[int]) -> list[list[int]]:
+# --8<-- [start:solution_backtracking]
+def subsets_backtracking(nums: list[int]) -> list[list[int]]:
     def generate(start: int, path: list[int]):
         ans.append(path[:])
 
@@ -31,28 +31,25 @@ def subsets_approach_2_backtracking(nums: list[int]) -> list[list[int]]:
     return ans
 
 
-# --8<-- end:solution_backtracking
+# --8<-- [end:solution_backtracking]
 
-# --8<-- start:solution_xor
-def subsets_approach_3_xor(nums: list[int]) -> list[list[int]]:
+# --8<-- [start:solution_xor]
+def subsets_xor(nums: list[int]) -> list[list[int]]:
     n = len(nums)
     ans = []
 
     for mask in range(1 << n):
         subsets = []
         for i in range(n):
-            print(f'{mask & (1 << i):03b} - {mask & (1 << i)}')
             if mask & (1 << i):
                 subsets.append(nums[i])
 
         ans.append(subsets)
-        print(f'--- {subsets} ---')
-
     return ans
 
 
-# --8<-- end:solution_xor
+# --8<-- [end:solution_xor]
 
 l = [1, 2, 3]
 # print(subsets_approach_2_backtracking(l))
-print(subsets_approach_3_xor(l))
+print(subsets_xor(l))

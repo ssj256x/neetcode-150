@@ -86,8 +86,8 @@ Traverse the **decision tree** and collect all subsets during traversal.
 
 ### Implementation
 
-```python
---8 < -- "problems/backtracking/01-subsets/solution.py:solution_backtracking"
+```python title="solution.py"
+--8<-- "problems/backtracking/01-subsets/solution.py:solution_backtracking"
 ```
 
 ---
@@ -149,7 +149,7 @@ mask    binary    subset
 
 ### Implementation
 
-```python
+```python title="solution.py"
 --8<-- "problems/backtracking/01-subsets/solution.py:solution_xor"
 ```
 

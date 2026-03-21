@@ -105,9 +105,8 @@ Explore all possible combinations by trying every number and reducing the remain
 
 ### Implementation
 
-```python
---8<-- "problems/backtracking/02-combnation-sum/solution.py:combination_sum"
-
+```python title="solution.py"
+--8<-- "problems/backtracking/02-combination-sum/solution.py:combination_sum"
 ```
 
 ---
@@ -215,8 +214,8 @@ No valid combination possible → stop loop
 
 ### Implementation
 
-```python
---8<-- "problems/backtracking/02-combnation-sum/solution.py:combination_sum_with_sort"
+```python title="solution.py"
+--8<-- "problems/backtracking/02-combination-sum/solution.py:combination_sum_with_sort"
 ```
 
 ---
