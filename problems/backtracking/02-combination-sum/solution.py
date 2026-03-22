@@ -3,6 +3,7 @@ def combination_sum(nums: list[int], target: int) -> list[list[int]]:
     def find(cur: int, remaining: int, subset: list[int]):
         if remaining == 0:
             ans.append(subset[:])
+            return
         if remaining < 0:
             return
 
@@ -23,6 +24,7 @@ def combination_sum_with_sort(nums: list[int], target: int) -> list[list[int]]:
     def find(cur: int, remaining: int, subset: list[int]):
         if remaining == 0:
             ans.append(subset[:])
+            return
 
         for i in range(cur, len(nums)):
             if nums[i] > remaining:
@@ -42,4 +44,4 @@ def combination_sum_with_sort(nums: list[int], target: int) -> list[list[int]]:
 
 n = [2, 5, 6, 9]
 t = 9
-print(combination_sum_with_sort(n, t))
+print(combination_sum(n, t))
