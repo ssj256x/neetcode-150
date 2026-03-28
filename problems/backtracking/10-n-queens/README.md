@@ -90,46 +90,7 @@ Output:
 ### Code
 
 ```python
-def solve_n_queens(n: int) -> list[list[str]]:
-    def is_valid(row: int, col: int) -> bool:
-        # Column check
-        for r in range(row):
-            if board[r][col] == 'Q':
-                return False
-
-        # Left diagonal ↖
-        r, c = row - 1, col - 1
-        while r >= 0 and c >= 0:
-            if board[r][c] == 'Q':
-                return False
-            r -= 1
-            c -= 1
-
-        # Right diagonal ↗
-        r, c = row - 1, col + 1
-        while r >= 0 and c < n:
-            if board[r][c] == 'Q':
-                return False
-            r -= 1
-            c += 1
-
-        return True
-
-    def backtrack(row: int):
-        if row == n:
-            ans.append(["".join(r) for r in board])
-            return
-
-        for col in range(n):
-            if is_valid(row, col):
-                board[row][col] = 'Q'
-                backtrack(row + 1)
-                board[row][col] = '.'
-
-    board = [['.' for _ in range(n)] for _ in range(n)]
-    ans = []
-    backtrack(0)
-    return ans
+--8<-- "problems/backtracking/10-n-queens/solution.py:n_queens" 
 ```
 
 ---

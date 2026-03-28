@@ -1,3 +1,4 @@
+# --8<-- [start:n_queens]
 def solve_n_queens(n: int) -> list[list[str]]:
     def is_valid(row, col):
         for r in range(row):
@@ -35,6 +36,8 @@ def solve_n_queens(n: int) -> list[list[str]]:
     place(0)
     return ans
 
+
+# --8<-- [end:n_queens]
 
 def print_board(b):
     for i in range(len(b)):
