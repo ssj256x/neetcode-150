@@ -2,7 +2,6 @@
 
 **Difficulty**:  
 **Pattern**:  
-**Source**:  
 **Link**:  
 
 ---
@@ -111,4 +110,4 @@ Similar problems:
 
 Summarize the pattern in one or two strong sentences.
 
-> The real lesson is not the solution — it’s the pattern.
+> Id required a small footnote
