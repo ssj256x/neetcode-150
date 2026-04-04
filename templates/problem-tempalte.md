@@ -110,4 +110,4 @@ Similar problems:
 
 Summarize the pattern in one or two strong sentences.
 
-> Id required a small footnote
+> If required a small footnote
