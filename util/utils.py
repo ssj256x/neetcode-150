@@ -33,3 +33,10 @@ def print_dp_table(s: str, dp: list[list[bool | None]]):
             row += fmt(val) + " "
 
         print(row)
+
+
+def print_board[T](board: list[list[T]]) -> None:
+    for i in range(len(board)):
+        for j in range(len(board[0])):
+            print(board[i][j], end=' ')
+        print()
